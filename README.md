@@ -24,7 +24,7 @@ Consistencia: Para actualizar la UI, el ViewModel debe emitir una copia completa
 
 Optimización en Compose: Jetpack Compose puede comparar fácilmente si el estado ha cambiado para decidir si debe recomponer o no un componente, mejorando el rendimiento.
 
-3. ¿Cómo se evidencia el flujo de datos unidireccional en tu solución?  
+¿Cómo se evidencia el flujo de datos unidireccional en tu solución?  
 El flujo unidireccional (UDF) se evidencia en el ciclo cerrado de comunicación:
 
 El Estado baja (State flows DOWN): El QuizViewModel expone el uiState. La función QuizScreen lo observa mediante collectAsState() y pasa los valores necesarios hacia abajo a los componentes hijos (como el texto de la pregunta o el puntaje).
